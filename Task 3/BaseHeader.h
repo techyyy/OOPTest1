@@ -24,6 +24,7 @@ class Alpha:public Base{
     public:
     ~Alpha() { 
         S = S+count;
+        Base::count--;
     }
     private:
 
@@ -46,6 +47,7 @@ class Gamma:public Base{
      public:
     ~Gamma() { 
         S = S + count - 29;
+        Base::count--;
     }
 
     private:
